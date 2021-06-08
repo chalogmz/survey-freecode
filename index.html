@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Anime Survey</h1>
+            <p id="description">Thank you for participating in our survey.</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input 
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Your full name"
+                required
+                />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input 
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Your favorite email"
+                required
+                />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input 
+                type="number"
+                name="age"
+                id="number"
+                min="10"
+                max="99"
+                class="form-control"
+                placeholder="Your age"
+                required
+                />
+            </div>
+            <div class="form-group">
+                <p>How often do you watch anime?</p>
+                <select name="amount" id="dropdown" class="form-control" required>
+                    <option disabled selected value>Select amount of time</option>
+                    <option value="every-day">Every day</option>
+                    <option value="week">A couple times a week</option>
+                    <option value="month">A few times a month</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>How were you first introduced to anime?</p>
+                <label>
+                    <input 
+                    name="user-introduction"
+                    value="By-a-friend"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                    />By a friend</label>
+                <label>
+                    <input 
+                    name="user-introduction"
+                    value="By-a-family-member"
+                    type="radio"
+                    class="input-radio"
+                    checked/>By a familt member</label>
+                <label>
+                    <input 
+                    name="user-introduction"
+                    value="television"
+                    type="radio"
+                    class="input-radio"
+                    checked/>Television</label>
+                <label>
+                    <input 
+                    name="user-introduction"
+                    value="internet"
+                    type="radio"
+                    class="input-radio"
+                    checked/>Internet</label>
+                <label>
+                    <input 
+                    name="user-introduction"
+                    value="other"
+                    type="radio"
+                    class="input-radio"
+                    checked/>Other</label>
+            </div>
+            <div class="form-group">
+                <p>What is your favorite anime genre?</p>
+                <select name="genre" id="genre">
+                    <option disabled selected value>Select an option</option>
+                    <option value="shounen">Shounen</option>
+                    <option value="shoujo">Shoujo</option>
+                    <option value="seinen">Seinen</option>
+                    <option value="josei">Josei</option>
+                    <option value="kodomo">Kodomo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Which Anime do you Watch?<span class="clue">(Check all that apply)</span></p>
+                <label>
+                    <input 
+                    name="prefer"
+                    value="dragon-ball"
+                    type="checkbox"
+                    class="input-checkbox"/>Dragon Ball</label>
+                <label>
+                    <input
+                    name="prefer"
+                    value="naruto"
+                    type="checkbox"
+                    class="input-checkbox"/>Naruto</label>
+                <label>
+                    <input
+                    name="prefer"
+                    value="fairy-tail"
+                    type="checkbox"
+                    class="input-checkbox"/>Fairy Tail</label>  
+                <label>
+                    <input
+                    name="prefer"
+                    value="one-piece"
+                    type="checkbox"
+                    class="input-checkbox"/>One Piece</label>
+                <label>
+                    <input
+                    name="prefer"
+                    value="attack-on-titan"
+                    type="checkbox"
+                    class="input-checkbox"/>Attack on Titan</label>
+                <label>
+                    <input
+                    name="prefer"
+                    value="bleach"
+                    type="checkbox"
+                    class="input-checkbox"/>Bleach</label>
+                <label>
+                    <input
+                    name="prefer"
+                    value="fullmetal-alchemist"
+                    type="checkbox"
+                    class="input-checkbox"/>Fullmetal Alchemist</label>
+                <label>
+                    <input
+                    name="prefer"
+                    value="hunter-x-hunter"
+                    type="checkbox"
+                    class="input-checkbox"/>Hunter X Hunter</label>
+                <label>
+                    <input
+                    name="prefer"
+                    value="death-note"
+                    type="checkbox"
+                    class="input-checkbox"/>Death Note</label>
+                <label>
+                    <input
+                    name="prefer"
+                    value="mob-psycho"
+                    type="checkbox"
+                    class="input-checkbox"/>Mob Psycho</label>
+                <label>
+                    <input
+                    name="prefer"
+                    value="one-punch-man"
+                    type="checkbox"
+                    class="input-checkbox"/>One Punch Man</label>
+                <label>
+                    <input
+                    name="prefer"
+                    value="beserk"
+                    type="checkbox"
+                    class="input-checkbox"/>Beserk</label>
+                <label>
+                    <input
+                    name="prefer"
+                    value="jujutsu-kaisen"
+                    type="checkbox"
+                    class="input-checkbox"/>Jujutsu Kaisen</label>
+            </div>
+            <div class="form-group">
+                <p>Do you watch your Anime Dubbed or Subtitled?</p>
+                <label>
+                    <input 
+                    name="audio"
+                    value="subtitled"
+                    type="radio"
+                    class="input-radio"
+                    checked/>Subtitled</label>
+                <label>
+                    <input 
+                    name="audio"
+                    value="dubbed"
+                    type="radio"
+                    class="input-radio"
+                    checked/>Dubbed</label>
+                <label>
+                    <input 
+                    name="audio"
+                    value="both"
+                    type="radio"
+                    class="input-radio"
+                    checked/>Both</label>
+                <label>
+                    <input 
+                    name="audio"
+                    value="understand"
+                    type="radio"
+                    class="input-radio"
+                    checked/>I understand the language</label>
+            </div>
+            <div class="form-group">
+                <p>How do you watch your anime shows?</p>
+                <label>
+                    <input 
+                    name="media"
+                    value="local-international-chanel"
+                    type="checkbox"
+                    class="input-checkbox"/>Local or International channel</label>
+                <label>
+                    <input 
+                    name="media"
+                    value="paid-channel"
+                    type="checkbox"
+                    class="input-checkbox"/>Paid channel</label>
+                <label>
+                    <input 
+                    name="media"
+                    value="online-streaming"
+                    type="checkbox"
+                    class="input-checkbox"/>Online Streaming</label>
+                <label>
+                    <input 
+                    name="media"
+                    value="paid-online-streaming"
+                    type="checkbox"
+                    class="input-checkbox"/>Paid Online Streaming</label>
+            </div>
+            <div class="form-group">
+                <p>Have you ever made cosplay?</p>
+                <select name="cosplay" id="cosplay" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">Not</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>What matter to you the most in an anime?</p>
+                <textarea
+                id="answer" 
+                class="input-textarea" 
+                name="answer"
+                placeholder="Enter your answer here..."
+                ></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
